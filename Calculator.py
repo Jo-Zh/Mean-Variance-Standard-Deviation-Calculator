@@ -3,10 +3,10 @@ import numpy as np
 def calculate(list):
     list=np.array(list)
     
-    if len(list)<9:
+    if len(list)<10:
         raise ValueError("List must contain nine numbers.")
     else:
-        myArray=list.reshape((3,3))
+        myArray=list.reshape((5,2))
         output_mean_1=np.mean(myArray, axis=1)
         output_mean_0=np.mean(myArray, axis=0)
         output_mean=np.mean(myArray)
